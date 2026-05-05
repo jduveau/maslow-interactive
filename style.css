@@ -1,0 +1,76 @@
+body {
+  font-family: Arial;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* PYRAMIDE */
+.pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.level {
+  text-align: center;
+  padding: 25px;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+.level:hover {
+  transform: scale(1.05);
+}
+
+/* COULEURS + FORMES */
+.accomplishment {
+  width: 120px;
+  background: #d9534f;
+}
+
+.esteem {
+  width: 200px;
+  background: #d4a017;
+}
+
+.belonging {
+  width: 280px;
+  background: #d9d44a;
+  color: black;
+}
+
+.security {
+  width: 360px;
+  background: #5cb85c;
+}
+
+.physiological {
+  width: 440px;
+  background: #5b8bd4;
+}
+
+/* TEXTE */
+.info-box {
+  width: 400px;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.mentorat {
+  margin-top: 15px;
+  padding: 10px;
+  border-left: 4px solid #000;
+  background: #f5f5f5;
+}
