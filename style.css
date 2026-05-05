@@ -44,7 +44,7 @@ body {
 
 /* 1. Triangle du haut */
 .accomplishment {
-  width: 150px;
+  width: 100px;
   height: 140px;
   background: #c84f55;
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
