@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pyramide de Maslow interactive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Pyramide de Maslow interactive</h2>
+
+<div class="container">
+
+  <!-- PYRAMIDE -->
+  <div class="pyramid">
+
+    <div class="level accomplishment" onmouseover="showText('accomplissement')">
+      🏆
+    </div>
+
+    <div class="level esteem" onmouseover="showText('estime')">
+      ⭐
+    </div>
+
+    <div class="level belonging" onmouseover="showText('appartenance')">
+      👥
+    </div>
+
+    <div class="level security" onmouseover="showText('securite')">
+      🏠
+    </div>
+
+    <div class="level physiological" onmouseover="showText('physio')">
+      🧠
+    </div>
+
+  </div>
+
+  <!-- TEXTE -->
+  <div class="info-box" id="info">
+    Passe la souris sur un niveau pour voir l’explication
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
