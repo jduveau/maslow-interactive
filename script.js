@@ -34,13 +34,13 @@ function showText(level) {
       <p>Le besoin de sécurité concerne la quête de stabilité, de prévisibilité. La personne cherche à évoluer dans un environnement prévisible, sans imprévus provoqué par une perte d’emploi ou de logement.</p>
       <div class="Du point de vu du/de la Mentee">
         <strong>Du point de vu du/de la Mentee :</strong><br>
-        (se) rassurer sur ses compétences, (se) donner le droit de les exprimer, profiter un espace prévisible et rassurant au/ à la mentee
+        Se sentir écouté, respecté et accompagné dans un cadre stable et rassurant afin de pouvoir avancer sereinement, sans imprévus majeurs.
       </div>
     `,
 
     physio: `
       <h3>Besoins physiologiques</h3>
-      <p>Les besoins physiologiques regroupe les fonctions vitales tel que manger, dormir, respirer, boire.</p>
+      <p>Les besoins physiologiques regroupe les fonctions vitales telles que manger, dormir, respirer, boire.</p>
       <div class="Du point de vu du/de la Mentee">
         <strong>Du point de vu du/de la Mentee :</strong><br>
         Il peut s’agir au-delà de la faim ou la soif, de (se) donner les conditions matérielles pour réussir son activité (le bon espace, le bon wifi,…)
