@@ -95,45 +95,5 @@ function showText(level) {
       • Orienter vers des ressources adaptées lorsque cela est nécessaire.<br>
       • Encourager l'organisation et la préparation des activités.
     </div>
-  `,
-
-  esthetique: `
-    <h3>Besoin esthétique</h3>
-    <p>Le besoin esthétique renvoie à la recherche d'harmonie, de créativité, de beauté ou de cohérence dans son environnement et dans les activités que l'on réalise.</p>
-
-    <div class="mentee">
-      <strong>Du point de vue du/de la mentee :</strong><br>
-      Évoluer dans un environnement agréable, pouvoir exprimer sa créativité et trouver de la satisfaction dans la manière dont les choses sont réalisées.
-    </div>
-
-    <div class="mentor">
-      <strong>Du point de vue du mentor :</strong><br>
-      • Encourager l'expression de la créativité.<br>
-      • Explorer les environnements de travail qui motivent le/la mentee.<br>
-      • Valoriser les initiatives originales.<br>
-      • Identifier des métiers ou secteurs correspondant à cette sensibilité.<br>
-      • Favoriser un cadre de travail agréable et stimulant.
-    </div>
-  `,
-
-  transcendance: `
-    <h3>Besoin de transcendance</h3>
-    <p>Le besoin de transcendance correspond à la volonté de contribuer à quelque chose qui dépasse ses intérêts personnels et qui donne davantage de sens à son parcours.</p>
-
-    <div class="mentee">
-      <strong>Du point de vue du/de la mentee :</strong><br>
-      Donner du sens à son projet professionnel, contribuer à une cause, être utile aux autres ou agir en cohérence avec ses valeurs.
-    </div>
-
-    <div class="mentor">
-      <strong>Du point de vue du mentor :</strong><br>
-      • Explorer les valeurs qui motivent durablement le/la mentee.<br>
-      • Relier le projet professionnel à un projet de vie plus large.<br>
-      • Mettre en lumière l'utilité sociale du travail envisagé.<br>
-      • Encourager les engagements citoyens ou associatifs.<br>
-      • Aider le/la mentee à identifier l'impact positif qu'il ou elle souhaite avoir sur les autres.
-    </div>
   `
 };
-  document.getElementById("info").innerHTML = content[level]; 
-}
