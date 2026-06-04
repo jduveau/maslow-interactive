@@ -135,3 +135,5 @@ function showText(level) {
     </div>
   `
 };
+  document.getElementById("info").innerHTML = content[level]; 
+}
