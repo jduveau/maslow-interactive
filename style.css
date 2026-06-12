@@ -1,81 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #ffffff;
-  color: white;
+  color: #111;
   text-align: center;
+}
+
+h2 {
+  margin: 24px 16px 10px;
+  font-size: clamp(22px, 4vw, 32px);
+  color: #111;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 60px;
+  align-items: flex-start;
+  gap: 40px;
   min-height: 80vh;
+  padding: 24px;
+  width: 100%;
 }
 
+/* PYRAMIDE RESPONSIVE */
 .pyramid {
-  width: 700px;
+  width: min(100%, 560px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 1;
 }
 
 /* Tous les étages */
 .level {
-  height: 115px;
+  height: clamp(70px, 11vw, 105px);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-top: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  margin-top: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.22);
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.level:hover {
+.level:hover,
+.level:focus {
   transform: scale(1.03);
-  filter: brightness(1.15);
+  filter: brightness(1.12);
   z-index: 2;
 }
 
 .icon {
-  font-size: 56px;
+  font-size: clamp(30px, 6vw, 52px);
 }
 
-/* 1. Triangle du haut */
+/* Largeurs relatives plutôt que fixes */
 .accomplishment {
-  width: 180px;
-  height: 140px;
+  width: 26%;
+  height: clamp(85px, 13vw, 125px);
   background: #c84f55;
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
 
-/* 2. Trapèze */
 .esteem {
-  width: 300px;
+  width: 43%;
   background: #d8a900;
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 
-/* 3. Trapèze */
 .belonging {
-  width: 420px;
+  width: 60%;
   background: #d7d545;
   color: black;
   clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
 }
 
-/* 4. Trapèze */
 .security {
-  width: 560px;
+  width: 80%;
   background: #63b55f;
   color: black;
   clip-path: polygon(12% 0%, 88% 0%, 100% 100%, 0% 100%);
 }
 
-/* 5. Trapèze de base */
 .physiological {
-  width: 700px;
+  width: 100%;
   background: #5a94df;
   color: black;
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
@@ -83,20 +95,101 @@ body {
 
 /* Panneau de texte */
 .info-box {
-  width: 430px;
+  width: min(100%, 430px);
   min-height: 330px;
   background: white;
   color: #111;
-  padding: 26px;
+  padding: 24px;
   border-radius: 18px;
   text-align: left;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+  line-height: 1.45;
+  font-size: 15px;
 }
 
-.mentorat {
-  margin-top: 18px;
-  padding: 16px;
+.info-box h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.info-box p {
+  margin-bottom: 16px;
+}
+
+.mentee,
+.mentor {
+  margin-top: 14px;
+  padding: 14px;
   border-radius: 12px;
-  border-left: 6px solid #111;
-  background: #f2f2f2;
+  background: #f4f4f4;
+  border-left: 5px solid #333;
+}
+
+.mentor {
+  background: #f7f7f7;
+}
+
+/* ADAPTATION TABLETTE ET MOBILE */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 18px;
+  }
+
+  .pyramid {
+    width: min(100%, 520px);
+  }
+
+  .info-box {
+    width: min(100%, 520px);
+  }
+}
+
+/* PETITS ÉCRANS */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 22px;
+    margin-top: 18px;
+  }
+
+  .container {
+    padding: 12px;
+    gap: 20px;
+  }
+
+  .pyramid {
+    width: 100%;
+  }
+
+  .level {
+    height: 66px;
+    margin-top: 6px;
+  }
+
+  .accomplishment {
+    height: 80px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .info-box {
+    padding: 18px;
+    border-radius: 14px;
+    font-size: 14px;
+    min-height: auto;
+  }
+
+  .info-box h3 {
+    font-size: 19px;
+  }
+
+  .mentee,
+  .mentor {
+    padding: 12px;
+    font-size: 14px;
+  }
 }
